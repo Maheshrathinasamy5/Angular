@@ -1,0 +1,10 @@
+<div>
+    <h1>UseCase 5 - Parent Component</h1>
+    <p>Message from Parent: {{ parentMessage }}</p>
+  
+    <!-- Sending data to child -->
+    <app-child [childMessage]="parentMessage" (messageEvent)="receiveMessage($event)"></app-child>
+  
+    <p>Message from Child: {{ childMessage }}</p>
+  </div>
+  
